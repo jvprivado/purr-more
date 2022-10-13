@@ -1,0 +1,36 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+@font-face {
+    font-family: "VAGRoundedLTCYR-Black";
+    font-weight: 800;
+    src: local("VAGRoundedLTCYR-Black"),
+    url("../fonts/VAGRoundedLTCYR-Black/VAGRoundedLTCYR-Black.woff2") format("opentype");
+}
+
+@font-face {
+    font-family: "VAGRoundedLTCYR-light";
+    font-weight: 400;
+    src: local("VAGRoundedLTCYR-light"),
+    url("../fonts/VAGRoundedLTCYR-Light/VAGRoundedLTCYR-Light.woff2") format("opentype");
+}
+
+@font-face {
+    font-family: "VAGRoundedLTCYR-bold";
+    font-weight: 700;
+    src: local("VAGRoundedLTCYR-bold"),
+    url("../fonts/VAGRoundedLTCYR-Bold/VAGRoundedLTCYR-Bold.woff2") format("opentype");
+}
+
+@font-face {
+    font-family: "YWFT-Hannah-Regular";
+    font-weight: 400;
+    src: local("YWFT-Hannah-Regular"),
+    url("../fonts/YWFT-Hannah-Regular/YWFT-Hannah-Regular.woff2") format("opentype");
+}

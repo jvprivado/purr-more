@@ -1,0 +1,134 @@
+body {
+    font-family: VAGRoundedLTCYR-Black;
+}
+
+p {
+    font-family: VAGRoundedLTCYR-light;
+}
+
+small {
+    font-family: VAGRoundedLTCYR-light;
+}
+
+@media only screen and (max-width: 992px) {
+    .music-player-inner-content-wrap {
+        width: 100% !important;
+    }
+    .music-player-inner-content-wrap .react-tabs__tab-panel--selected {
+        min-height: 300px !important;
+    }
+    .music-player-inner-content-wrap .react-tabs__tab-panel--selected iframe {
+        min-height: 300px !important;
+    }
+    .footer-social-mobile-show {
+        display: block;
+        padding: 10px;
+    }
+    .header-bottom-main-wrap {
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        top: 0;
+    }
+    .hero-main-area-wrap {
+        margin-top: 80px;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .music-contest-toptitle-wrap h1 {
+        font-size: 40px;
+    }
+    .footer-bottom-main-wrap .footer-top-single-item p {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .form-navbar-main-btn-area.next {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+
+        * {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .music-player-content-top h2 {
+        font-size: 30px;
+    }
+    .music-player-content-top p {
+        font-size: 16px;
+    }
+    .video-list-slider-title {
+        display: none !important;
+    }
+    .video-player-top-view .view-video-content-single-item {
+        display: block;
+
+        .view-video-content-right {
+            display: flex;
+            gap: 5px;
+            width: 100px;
+        }
+    }
+    .video-player-content-main-wrap .video-player-content-title h3 {
+        font-size: 30px;
+    }
+    form.form-container > .mt-5 {
+        margin-top: 15px !important;
+    }
+    .prev-winner-content-main-wrap
+        .prev-winner-content-inner-wrap
+        .prev-winner-content-title
+        h3 {
+        font-size: 30px;
+    }
+    .wiskas-range-content-main-wrap .wiskas-range-content-title h3 {
+        font-size: 30px;
+    }
+    .wiskas-blog-content-main-wrap
+        .wiskas-blog-inner-wrap
+        .wiskas-blog-content-title
+        h3 {
+        font-size: 30px;
+    }
+    .prev-winner-video-wrap h3 {
+        font-size: 28px !important;
+    }
+    .wiskas-slider .slider-items-main-wrap button.slick-arrow.slick-prev {
+        left: -60px;
+    }
+    .wiskas-slider .slider-items-main-wrap button.slick-arrow.slick-next {
+        right: -60px;
+    }
+    .wiskas-slider .slider-items-main-wrap {
+        padding: 0px 30px;
+    }
+    .footer-social-mobile-show {
+        display: block;
+        padding: 10px;
+    }
+    .prev-content-bottom-title span {
+        font-size: 20px;
+    }
+    .prev-winner-list-wrap .prev-winner-video-wrap {
+        padding: 0;
+    }
+    .hero-main-area-wrap {
+        margin-top: 55px !important;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .prev-content-bottom-title span {
+        font-size: 16px;
+    }
+
+    .prev-winner-video-wrap h3 {
+        font-size: 25px !important;
+    }
+}

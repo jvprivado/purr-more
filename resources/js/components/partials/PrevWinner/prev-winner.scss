@@ -1,0 +1,105 @@
+.prev-winner-content-main-wrap {
+    width: 960px;
+    margin: auto;
+    padding-bottom: 50px;
+
+    .prev-winner-content-inner-wrap {
+        .prev-winner-content-title {
+            text-align: center;
+
+            h3 {
+                position: relative;
+                display: inline-block;
+                margin-bottom: 20px;
+                font-size: 42px;
+                color: #780068;
+                font-weight: 700;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 4px;
+                    left: 0;
+                    background: #ffb800;
+                    bottom: -7px;
+                }
+            }
+        }
+    }
+}
+
+.prev-content-bottom-title {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    background: #f8f5f8;
+
+    border-radius: 5px;
+
+    span {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.33em;
+        color: #494949;
+    }
+}
+
+.prev-winner-video-thumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border: none;
+        border-radius: 50%;
+        background: #fff;
+        color: rgba(0, 0, 0, 0.9098039216);
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.prev-winner-video-item-right h4 {
+    color: #90007e;
+}
+
+.prev-winner-list-wrap {
+    .prev-winner-video-wrap {
+        margin-bottom: 15px;
+        background: #f8f5f8;
+        padding: 15px;
+        border-radius: 7px;
+
+        h3 {
+            color: #90007e;
+            font-size: 42px;
+            margin-top: 10px;
+            font-family: VAGRoundedLTCYR-light;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .prev-winner-content-main-wrap {
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .prev-content-bottom-title {
+        justify-content: center;
+    }
+    .prev-winner-list-wrap .prev-winner-video-wrap {
+        padding: 0;
+        text-align: center;
+    }
+}

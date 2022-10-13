@@ -1,0 +1,268 @@
+.header-top-main-wrap {
+    background: #a7268e;
+    padding: 10px;
+
+    .header-top-inner-wrap {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.navbar-expand .navbar-nav {
+    flex-direction: row;
+    gap: 15px;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    color: #1e2125;
+    background-color: #90007e !important;
+}
+
+.header-bottom-main-wrap {
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+        background: #90007e !important;
+        min-height: 70px;
+        padding: 0;
+
+        .m-auto.navbar-nav a {
+            color: #fff !important;
+            font-size: 18px;
+            font-weight: 700;
+
+            span {
+                color: #ffb800;
+            }
+        }
+    }
+}
+
+.navbar-light .navbar-toggler {
+    color: #fff !important;
+    border-color: rgba(0, 0, 0, 0) !important;
+    padding-left: 0;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0 !important;
+}
+
+.navbar-main-menu-wrap {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    & > span {
+        display: block;
+
+        & > span {
+            display: block;
+            width: 30px;
+            height: 3px;
+            background: #fff;
+            margin-top: 6px;
+        }
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.main-header-area-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
+    .header-left img {
+        width: 90px;
+    }
+}
+
+.navbar-expand .navbar-nav .dropdown-menu {
+    position: absolute;
+    background: #770067;
+    top: 58px;
+    border: none;
+}
+
+.header-top-nav-items {
+    ul {
+        display: flex;
+        gap: 15px;
+        justify-content: flex-end;
+        margin-bottom: 0;
+
+        li {
+            list-style: none;
+
+            a {
+                color: #fff;
+                font-weight: 400;
+                font-family: "VAGRoundedLTCYR-light";
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .main-header-area-wrap {
+        justify-content: center;
+
+        .header-left {
+            height: 80px;
+            display: grid;
+            align-items: center;
+
+            img {
+                width: 80px !important;
+            }
+        }
+
+        .header-right {
+            nav.navbar-hide-toggle {
+                position: absolute;
+                width: 100vw;
+                left: 0;
+                height: 0;
+                background: #770067;
+                z-index: 9;
+                top: 75px;
+                opacity: 0;
+                transition: 0.1s;
+                visibility: hidden;
+            }
+
+            nav.navbar-show-toggle {
+                position: absolute;
+                width: 100vw;
+                left: 0;
+                height: 100vh;
+                background: #770067;
+                z-index: 9;
+                top: 75px;
+                opacity: 1;
+                transition: 0.3s;
+                visibility: visible;
+                display: block;
+                padding-left: 30px;
+            }
+
+            .m-auto.navbar-nav {
+                flex-direction: column;
+            }
+
+            span.show-navbar-toggle-icon {
+                position: relative;
+                transform: rotate(45deg);
+                transition: 0.3s;
+
+                > span {
+                    transition: 0.3s;
+
+                    &:first-child {
+                        transform: rotate(90deg);
+                        top: 0;
+                        position: absolute;
+                    }
+                }
+            }
+
+            .navbar-expand .navbar-nav .dropdown-menu {
+                position: relative;
+                background: #770067;
+                top: 0;
+                border: none;
+            }
+
+            .navbar-main-menu-wrap {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                position: absolute;
+                top: 22px;
+                right: 30px;
+            }
+
+            span.show-navbar-toggle-icon {
+                top: 10px;
+            }
+        }
+
+        .header-top-nav-items {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main-header-area-wrap {
+        .header-bottom-main-wrap
+            nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+            height: 55px;
+            min-height: unset;
+        }
+    }
+}
+@media only screen and (max-width: 576px) {
+    .header-bottom-main-wrap nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+        height: 55px;
+        min-height: unset !important;
+        .main-header-area-wrap {
+            .header-left {
+                height: unset;
+                img {
+                    width: 65px !important;
+                }
+            }
+            .header-right .navbar-main-menu-wrap {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                position: absolute;
+                top: 10px;
+                right: 30px;
+                > span > span {
+                    display: block;
+                    width: 28px;
+                    height: 2px;
+                    background: #fff;
+                    margin-top: 7px;
+                }
+            }
+            .header-right nav.navbar-show-toggle {
+                top: 55px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 350px) {
+    .header-bottom-main-wrap nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+        height: 55px;
+        min-height: unset !important;
+        .main-header-area-wrap {
+            .header-right .navbar-main-menu-wrap {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                position: absolute;
+                top: 10px;
+                right: 30px;
+                > span > span {
+                    display: block;
+                    width: 28px;
+                    height: 2px;
+                    background: #fff;
+                    margin-top: 7px;
+                }
+            }
+            .header-right nav.navbar-show-toggle {
+                top: 55px;
+            }
+        }
+    }
+}

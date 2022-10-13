@@ -1,0 +1,267 @@
+.footer-top-main-wrap {
+    position: relative;
+    min-height: 300px;
+
+    .footer-top-single-item {
+        text-align: left;
+
+        select.form-select {
+            border-radius: 25px;
+            padding: 10px;
+            margin-top: 15px;
+        }
+    }
+
+    .foter-social-area-wrap {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        right: 0;
+        gap: 15px;
+        font-size: 18px;
+        background: #fff;
+        width: 150px;
+        height: 40px;
+        align-items: center;
+        border-radius: 25px 0px 0px 25px;
+        bottom: 15px;
+
+        i {
+            font-size: 22px;
+        }
+
+        i.fa-brands.fa-youtube {
+            width: 30px;
+            height: 30px;
+            line-height: 2em;
+            background: red;
+            color: #fff;
+            border-radius: 50%;
+            font-size: 15px;
+        }
+
+        i.fa-brands.fa-instagram {
+            width: 30px;
+            height: 30px;
+            line-height: 2em;
+            background: #f00075;
+            color: #fff;
+            border-radius: 50%;
+            font-size: 15px;
+        }
+
+        i.fa-brands.fa-facebook-f {
+            width: 30px;
+            height: 30px;
+            line-height: 2em;
+            background: #1877f2;
+            color: #fff;
+            border-radius: 50%;
+            font-size: 15px;
+        }
+    }
+}
+
+// ===================
+.footer-middle-main-wrap {
+    padding: 15px 40px;
+    background: #eeeeee;
+    min-height: 40px;
+
+    .footer-middle-inner-wrap {
+        display: flex;
+        gap: 15px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        a {
+            color: #494949;
+            font-family: VAGRoundedLTCYR-light;
+
+            i {
+                padding-left: 5px;
+            }
+        }
+    }
+}
+
+.footer-bottom-content-main-wrap p {
+    margin-bottom: 0;
+    padding: 15px 40px;
+}
+
+.wiskas-slider .slider-items-main-wrap .single-video-content-bottom-wrap {
+    padding: 10px;
+    // background: #f8f5f8;
+    border-radius: 8px;
+    min-height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-mobile-responsive-show {
+    display: none;
+
+    .footer-logo-content-mobile {
+        margin-bottom: 30px;
+    }
+
+    .accordion-item {
+        background-color: transparent !important;
+        border: none;
+
+        h2.accordion-header button h3 {
+            font-size: 18px !important;
+        }
+
+        .accordion-body {
+            padding: 1rem 1.25rem;
+            background: #770067;
+        }
+
+        .accordion-button::after {
+            background-image: none;
+            transform: rotate(-180deg);
+
+            font-family: "Font Awesome 5 Free" !important;
+            font-weight: 900;
+            content: "\f077" !important;
+        }
+
+        .accordion-button:not(.collapsed)::after {
+            background-image: none;
+            transform: rotate(-180deg);
+
+            font-family: "Font Awesome 5 Free" !important;
+            font-weight: 900;
+            content: "\f078" !important;
+        }
+
+        button.accordion-button {
+            background: none;
+            border: none;
+            color: #fff;
+
+            &:focus {
+                z-index: 3;
+                border-color: #86b7fe00;
+                outline: 0;
+                box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 0%);
+            }
+        }
+    }
+}
+
+.footer-social-mobile-show {
+    display: none;
+}
+
+.footer-select-country-wrap {
+    position: relative;
+}
+
+.footer-select-country-wrap > a > * {
+    background-color: #ffb800;
+    color: #780068;
+    border-radius: 20px;
+    border: none;
+}
+
+.footer-select-country-wrap {
+    position: relative;
+    border-radius: 25px;
+
+    > * > div {
+        border-radius: 25px;
+        padding: 5px 10px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .footer-mobile-responsive-show {
+        display: block;
+    }
+    .footer-mobile-responsive-hide {
+        display: none;
+    }
+    .footer-middle-main-wrap .footer-middle-inner-wrap a {
+        width: 45%;
+    }
+    .footer-top-single-item.top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .footer-top-main-wrap .foter-social-area-wrap {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        right: 0;
+        gap: 15px;
+        font-size: 18px;
+        background: #fff;
+        width: 100%;
+        height: 40px;
+        align-items: center;
+        border-radius: 0;
+        bottom: -15px;
+        margin: auto;
+        padding: 20px;
+    }
+    .footer-social-mobile-hide {
+        display: none;
+    }
+    .footer-social-mobile-show {
+        display: block;
+    }
+    .footer-social-mobile-show {
+        .foter-social-area-wrap {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            right: 0;
+            gap: 15px;
+            font-size: 18px;
+            background: #fff;
+            width: 100%;
+            height: 40px;
+            align-items: center;
+            border-radius: 0;
+
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .foter-social-area-wrap i.fa-brands.fa-facebook-f {
+            width: 30px;
+            height: 30px;
+            line-height: 2em;
+            background: #1877f2;
+            color: #fff;
+            border-radius: 50%;
+            font-size: 15px;
+        }
+
+        .foter-social-area-wrap i.fa-brands.fa-youtube {
+            width: 30px;
+            height: 30px;
+            line-height: 2em;
+            background: red;
+            color: #fff;
+            border-radius: 50%;
+            font-size: 15px;
+        }
+
+        .foter-social-area-wrap i.fa-brands.fa-instagram {
+            width: 30px;
+            height: 30px;
+            line-height: 2em;
+            background: #f00075;
+            color: #fff;
+            border-radius: 50%;
+            font-size: 15px;
+        }
+    }
+}
